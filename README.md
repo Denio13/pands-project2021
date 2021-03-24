@@ -254,12 +254,8 @@ plt.clf()
 
 
     
-![png](output_19_0.png)
+![Petal_length](charts/Petal_length.png)
     
-
-
-
-    <Figure size 432x288 with 0 Axes>
 
 
 ## 3.2 Specifications for petal_width variable
@@ -284,12 +280,7 @@ plt.clf()
 
 
     
-![png](output_21_0.png)
-    
-
-
-
-    <Figure size 432x288 with 0 Axes>
+![Petal_width](charts/Petal_width.png)
 
 
 ## 3.3 Specifications for sepal_length variable
@@ -314,12 +305,7 @@ plt.clf()
 
 
     
-![png](output_23_0.png)
-    
-
-
-
-    <Figure size 432x288 with 0 Axes>
+![Sepal_length](charts/Sepal_length.png)
 
 
 ## 3.4 Specifications for sepal_width variable
@@ -344,12 +330,7 @@ plt.clf()
 
 
     
-![png](output_25_0.png)
-    
-
-
-
-    <Figure size 432x288 with 0 Axes>
+![Sepal_width](charts/Sepal_width.png)
 
 
 # 4. Scatter Plot of Iris Dataset (Relationship between variables)
@@ -362,9 +343,9 @@ plt.show()
 ```
 
 
-    
-![png](output_27_0.png)
-    
+[Scatter_Plot](charts/Scatter_Plot.png)
+
+
 
 
 # 4.1 Scatter Plot
@@ -383,13 +364,7 @@ plt.clf()
 ```
 
 
-    
-![png](output_29_0.png)
-    
-
-
-
-    <Figure size 432x288 with 0 Axes>
+![Sepal_length-Sepal_width](charts/Sepal_length-Sepal_width.png)
 
 
 ### The plot shows the relationship between petal lenght and width of plants
@@ -407,13 +382,7 @@ plt.clf()
 ```
 
 
-    
-![png](output_31_0.png)
-    
-
-
-
-    <Figure size 432x288 with 0 Axes>
+![Petal_length-Petal_width](charts/Petal_length-Petal_width.png)
 
 
 ## 4.2 Violin Plot It is used to visualize the distribution of data and its probability distribution.
@@ -452,30 +421,28 @@ plt.clf()
 
 
     
-![png](output_33_0.png)
+![Sepal_length_Violin_plot](charts/Sepal_length_Violin_plot.png)
     
 
 
 
     
-![png](output_33_1.png)
+![Sepal_width_Violin_plot](charts/Sepal_width_Violin_plot.png)
     
 
 
 
     
-![png](output_33_2.png)
+![Petal_length_Violin_plot](charts/Petal_length_Violin_plot.png)
     
 
 
 
     
-![png](output_33_3.png)
+![Petal_width_Violin_plot](charts/Petal_width_Violin_plot.png)
     
 
 
-
-    <Figure size 432x288 with 0 Axes>
 
 
 # 5. Correlation
@@ -494,13 +461,13 @@ plt.show()
 
 
     
-![png](output_35_0.png)
+![Correlation_with_regression](charts/Correlation_with_regression.png)
     
 
 
 
     
-![png](output_35_1.png)
+![Correlation_without_regression](charts/Correlation_without_regression.png)
     
 
 
@@ -586,9 +553,6 @@ scatter_matrix(iris_data)
 plt.show()
 ```
 
-
-    
-![png](output_42_0.png)
     
 
 
@@ -610,15 +574,6 @@ sns.boxplot(x = 'species', y = 'petal_width', data = iris_data)
 ```
 
 
-
-
-    <AxesSubplot:xlabel='species', ylabel='petal_width'>
-
-
-
-
-    
-![png](output_44_1.png)
     
 
 
@@ -634,14 +589,6 @@ sns.lmplot(x = 'sepal_length', y = 'sepal_width', data = iris_data, hue = 'speci
 
 
 
-
-    <seaborn.axisgrid.FacetGrid at 0x1880cce4a30>
-
-
-
-
-    
-![png](output_46_1.png)
     
 
 
@@ -669,7 +616,7 @@ plt.show()
 
 
     
-![png](output_48_0.png)
+![Plot_2D](charts/Plot_2D.png)
     
 
 
