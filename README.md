@@ -343,7 +343,7 @@ plt.show()
 ```
 
 
-[Scatter_Plot](charts/Scatter_Plot.png)
+![Scatter_Plot](charts/Scatter_Plot.png)
 
 
 
