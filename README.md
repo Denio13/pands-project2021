@@ -553,6 +553,7 @@ scatter_matrix(iris_data)
 plt.show()
 ```
 
+![Multivariate_Plots](charts/Multivariate_Plots.png)
     
 
 
@@ -574,6 +575,7 @@ sns.boxplot(x = 'species', y = 'petal_width', data = iris_data)
 ```
 
 
+![Box_Plot](charts/Box_Plot.png)
     
 
 
@@ -589,7 +591,9 @@ sns.lmplot(x = 'sepal_length', y = 'sepal_width', data = iris_data, hue = 'speci
 
 
 
+![lmplot_function](charts/lmplot_function.png)
     
+
 
 
 # 10. Plot 2D views of the iris dataset
