@@ -5,10 +5,10 @@
 # **Analysis of Iris dataset**
 
 ## Table of contents
-* [1. Task](#1.-task)
-* [2. Iris dataset](#2.-iris-dataset)
-  * [2.1 Iris dataset history](#2.1-iris-dataset-history)
-  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#2.2-importing-the-libaries-for-this-project:-pandas,-numpy,-matplotlib,-seaborn.)
+* [1. Task](#task)
+* [2. Iris dataset](#iris-dataset)
+  * [2.1 Iris dataset history](#iris-dataset-history)
+  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#importing-the-libaries-for-this-project:-pandas,-numpy,-matplotlib,-seaborn.)
 * [3. Dataset](#3.-dataset)
 * [4. Presenting the Summary of Dataset Statistics](#4.-presenting-the-summary-of-dataset-statistics)
   * [4.1 Summarize the Petal Length](#4.1-summarize-the-petal-length)
