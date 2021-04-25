@@ -1,20 +1,20 @@
 #  Programming and scripting project 2021 
 *pands-project2021*
-***
 *Denis Sarf*
+***
 # **Analysis of Iris dataset**
 
 ## Table of contents
-* [Iris dataset information](#iris-dataset)
-    * [Iris dataset history](#iris-dataset-history)
-    * [### **Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.**](Importing-the-libaries-for-this-project:-Pandas,-Numpy,-Matplotlib,-Seaborn.)
-* [Dataset](#dataset-code-and-analysis)
-    * [Imported libraries and modules](#imported-libraries-and-modules)
-        * [Libraries cheat sheets](#libraries-cheat-sheets)
-    * [Dataset import](#dataset-import)
-    * [Dataset summary](#datasetsummary)
-        * [Summary of the values - describe()](#summary-of-the-values---describe())
-        * [Samples of each type - info()](#samples-of-each-type---info())
+* [1. Task](#1.-Task)
+* [2. Iris dataset](#2.-Iris-dataset)
+  * [2.1 Iris dataset history](#2.1-Iris-dataset-history)
+  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#2.2-Importing-the-libaries-for-this-project:-Pandas,-Numpy,-Matplotlib,-Seaborn.)
+* [3. Dataset](#3.-Dataset)
+* [4. Presenting the Summary of Dataset Statistics](#4.-Presenting-the-Summary-of-Dataset-Statistics)
+  * [4.1 Summarize the Petal Length](#4.1-Summarize-the-Petal-Length)
+  * [4.2 Summarize the Petal Width](#4.2-Summarize-the-Petal-Width)
+  * [4.3 Summarize the Sepal Width](#4.3-Summarize-the-Sepal-Width)
+  * [4.4 Summarize the Sepal Length](#4.4-Summarize-the-Sepal-Length)
 * [Plots](#plots)
     * [Histograms](#histograms)
         * [Histogram code](#histogram-code)
@@ -26,9 +26,13 @@
     * [GitHub editing](#github-editing)
     * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
 
-## **Iris dataset**
+## **1. Task**
 
-### **Iris dataset history**
+Detailed project description can be found on [GitHub](https://github.com/Denio13/pands-project2021/blob/main/Project%202021.pdf)
+
+## **2. Iris dataset**
+
+### **2.1 Iris dataset history**
                                                         
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The Use of Multiple Measurements in Taxonomic Problems”](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x) as an example of linear discriminant analysis.
 This famous iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
@@ -46,7 +50,7 @@ The dataset contains a set of 150 records under 5 attributes:
 
 ![irises.png](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png)
 
-### **Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.**
+### **2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.**
 
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools.
 
@@ -64,7 +68,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 ```
 
-## **Dataset
+## **3. Dataset**
 Import the **iris.data** using the panda library and examine first few rows of data
 
 
@@ -200,7 +204,7 @@ print(iris_data.shape)
     (149, 5)
     
 
-# 2. Presenting the Summary of  Dataset Statistics
+## **4. Presenting the Summary of  Dataset Statistics**
 
 
 ```python
@@ -213,7 +217,7 @@ with open('Summary_Dataset.txt', 'w') as f:
     f.write(str(Summary))#to the new created text file.
 ```
 
-## 2.1 Summarize the Petal Length
+### **4.1 Summarize the Petal Length**
 
 
 ```python
@@ -223,7 +227,7 @@ with open('Summary_petal_length.txt', 'w') as f:
     f.write(str(petal_length.describe()))
 ```
 
-## 2.2 Summarize the Petal Width
+### **4.2 Summarize the Petal Width**
 
 
 ```python
@@ -233,7 +237,7 @@ with open('Summary_petal_width.txt', 'w') as f:
     f.write(str(petal_width.describe()))
 ```
 
-## 2.3 Summarize the Sepal Width
+## **4.3 Summarize the Sepal Width**
 
 
 ```python
@@ -243,8 +247,7 @@ sepal_width = iris_data['sepal_width']
 sepal_width.describe().to_string('Summary_sepal_width.txt', index = True, header = True)
 ```
 
-## 2.4 Summarize the Sepal Length
-
+### **4.4 Summarize the Sepal Length**
 
 ```python
 # Method 2:creating a text file and saving a summary  of sepal_length variable using
