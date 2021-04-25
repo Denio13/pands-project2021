@@ -8,23 +8,39 @@
 * [1. Task](#1-task)
 * [2. Iris dataset](#2-iris-dataset)
   * [2.1 Iris dataset history](#21-iris-dataset-history)
-  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#23-importing-the-libaries-for-this-project-pandas-numpy-matplotlib-seaborn)
+  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#22-importing-the-libaries-for-this-project-pandas-numpy-matplotlib-seaborn)
 * [3. Dataset](#3-dataset)
-* [4. Presenting the Summary of Dataset Statistics](#4-presenting-the-summary-of-dataset-statistics)
+* [4. Presenting the Summary of Dataset Statistics](#4-presenting-the-summary-of--dataset-statistics)
   * [4.1 Summarize the Petal Length](#41-summarize-the-petal-length)
   * [4.2 Summarize the Petal Width](#42-summarize-the-petal-width)
   * [4.3 Summarize the Sepal Width](#43-summarize-the-sepal-width)
   * [4.4 Summarize the Sepal Length](#44-summarize-the-sepal-length)
-* [Plots](#plots)
-    * [Histograms](#histograms)
-        * [Histogram code](#histogram-code)
-    * [Scatterplots](#scatterplots)
-        * [Scatterplot code](#scatterplot-code)
-    * [Pairplot](#pairplot)
-* [References](#references)
-    * [Worthy mentions](#worthy-mentions)
-    * [GitHub editing](#github-editing)
-    * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
+* [5. Specifications of each variable.](#5-specifications-of-each-variable.)
+  * [5.1 Specifications for petal_length variable](#51-specifications-for-petal_length-variable)
+  * [5.2 Specifications for petal_width variable](#52-specifications-for-petal_width-variable)
+  * [5.3 Specifications for sepal_length variable](#53-specifications-for-sepal_length-variable)
+  * [5.4 Specifications for sepal_width variable](#54-specifications-for-sepal_width-variable)
+* [6. Scatter Plot of Iris Dataset (Relationship between variables)](#6-scatter-plot-of-iris-dataset-relationship-between-variables))
+  * [6.1 Scatter Plot](#61-scatter-plot)
+  * [6.2 Violin Plot It is used to visualize the distribution of data and its probability distribution](#62-violin-plot-it-is-used-to-visualize-the-distribution-of-data-and-its-probability-distribution)
+* [7. Correlation](#7-correlation)
+* [8. Investigating the data: Min, Max, Mean, Median and Standard Deviation](#8-investigating-the-data-min-max-mean-median-and-standard-deviation)
+* [9. Multivariate Plots](#9-multivariate-plots)
+* [10. Box Plot](#10-box-plot)
+* [11. lmplot() function in seaborn](#11-implot-function-in-seaborn)
+* [12. Plot 2D views of the iris dataset](#12-plot-2d-views-of-the-iris-dataset)  
+* [13. References](#13-references)
+  * [13.1 Background info](#131-background-info)
+  * [13.2 Documentation](#132-documentation)
+  * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
+  * [13.1 Background info](#131-background-info)
+  * [13.2 Documentation](#132-documentation)
+  * [13.3 Summary values](#133-summary-values)
+  * [13.4 Iris Data Visualization using Python](#134-iris-data-visualization-using-python)
+  * [13.5 Machine Learning Tutorial](#135-machine-learning-tutorial)
+  * [13.6 Iris Dataset Analysis (Classification) | Machine Learning | Python](#136-iris-dataset-analysis-classification-machine-learning-python)
+  * [13.7 Jupyter Notebook](#137-jupyter-notebook)
+
 
 ## **1. Task**
 
@@ -237,7 +253,7 @@ with open('Summary_petal_width.txt', 'w') as f:
     f.write(str(petal_width.describe()))
 ```
 
-## **4.3 Summarize the Sepal Width**
+### **4.3 Summarize the Sepal Width**
 
 
 ```python
@@ -256,9 +272,9 @@ sepal_length = iris_data['sepal_length']
 sepal_length.describe().to_string('Summary_sepal_length.txt', index = True, header = True)
 ```
 
- # 3. Specifications of each variable.
+## **5. Specifications of each variable.**
 
-## 3.1 Specifications for petal_length variable
+### **5.1 Specifications for petal_length variable**
 
 
 ```python
@@ -284,7 +300,7 @@ plt.clf()
     
 
 
-## 3.2 Specifications for petal_width variable
+### **5.2 Specifications for petal_width variable**
 
 
 ```python
@@ -309,7 +325,7 @@ plt.clf()
 ![Petal_width](charts/Petal_width.png)
 
 
-## 3.3 Specifications for sepal_length variable
+### **5.3 Specifications for sepal_length variable**
 
 
 ```python
@@ -334,7 +350,7 @@ plt.clf()
 ![Sepal_length](charts/Sepal_length.png)
 
 
-## 3.4 Specifications for sepal_width variable
+### **5.4 Specifications for sepal_width variable**
 
 
 ```python
@@ -359,7 +375,7 @@ plt.clf()
 ![Sepal_width](charts/Sepal_width.png)
 
 
-# 4. Scatter Plot of Iris Dataset (Relationship between variables)
+## **6. Scatter Plot of Iris Dataset (Relationship between variables)**
 
 
 ```python
@@ -374,7 +390,7 @@ plt.show()
 
 
 
-# 4.1 Scatter Plot
+### **6.1 Scatter Plot**
 ### The plot shows the relationship between sepal lenght and width of plants
 
 
@@ -411,7 +427,7 @@ plt.clf()
 ![Petal_length-Petal_width](charts/Petal_length-Petal_width.png)
 
 
-## 4.2 Violin Plot It is used to visualize the distribution of data and its probability distribution.
+### **6.2 Violin Plot It is used to visualize the distribution of data and its probability distribution**
 
 
 ```python
@@ -471,8 +487,8 @@ plt.clf()
 
 
 
-# 5. Correlation
- The seaborn library allows to draw a correlation matrix through the  *pairplot()*  function.
+## **7. Correlation**
+The seaborn library allows to draw a correlation matrix through the  *pairplot()*  function.
 
 
 ```python
@@ -497,7 +513,7 @@ plt.show()
     
 
 
-# 6. Investigating the data: Min, Max, Mean, Median and Standard Deviation
+## **8. Investigating the data: Min, Max, Mean, Median and Standard Deviation**
 
 
 ```python
@@ -569,7 +585,7 @@ iris_data.std()
 
 
 
-# 7. Multivariate Plots
+## **9. Multivariate Plots**
 A scatterplot matrix is a matrix associated to n numerical arrays (data variables), X1,X2,…,Xn , of the same length. The cell (i,j) of such a matrix displays the scatter plot of the variable Xi versus Xj.
 
 
@@ -583,7 +599,7 @@ plt.show()
     
 
 
-# 8. Box Plot
+## **10. Box Plot**
 A box plot (or box-and-whisker plot) shows the distribution of quantitative data in a way that facilitates comparisons between variables or across levels of a categorical variable. The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution.
 
 
@@ -605,7 +621,7 @@ sns.boxplot(x = 'species', y = 'petal_width', data = iris_data)
     
 
 
-# 9. lmplot() function in seaborn
+## **11. lmplot() function in seaborn**
 
 Seaborn’s lmplot is a 2D scatterplot with an optional overlaid regression line. Logistic regression for binary classification is also supported with lmplot . It is intended as a convenient interface to fit regression models across conditional subsets of a dataset.
 
@@ -622,7 +638,7 @@ sns.lmplot(x = 'sepal_length', y = 'sepal_width', data = iris_data, hue = 'speci
 
 
 
-# 10. Plot 2D views of the iris dataset
+## **12. Plot 2D views of the iris dataset**
 
 
 ```python
@@ -650,75 +666,60 @@ plt.show()
     
 
 
-# References
+## **13. References**
 
-Background info:
+### **13.1 Background info**
 
-- https://en.wikipedia.org/wiki/Iris_flower_data_set
+- [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+- [The Iris Dataset — A Little Bit of History and Biology](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
-- https://archive.ics.uci.edu/ml/datasets/iris
+- [Iris Data Set](https://archive.ics.uci.edu/ml/datasets/iris)
 
-Docs:
+### **13.2 Documentation**
 
-- https://www.python.org/
+- [Python Documentation](https://www.python.org/) 
+- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) 
 
-- https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+- [Matplotlib Documentation](https://matplotlib.org/stable/gallery/color/named_colors.html)
 
-- https://matplotlib.org/stable/gallery/color/named_colors.html
+- [Boxplot chart](http://holoviews.org/gallery/demos/bokeh/boxplot_chart.html) 
 
-- http://holoviews.org/gallery/demos/bokeh/boxplot_chart.html
+- [Visual Studio Code - Python](https://code.visualstudio.com/docs/python/data-science-tutorial)
 
-- https://code.visualstudio.com/docs/python/data-science-tutorial
+### **13.3 Summary values**
 
-Summary values:
+- [Summary() equivalent in numpy](https://stackoverflow.com/questions/33889310/r-summary-equivalent-in-numpy) 
 
-- https://stackoverflow.com/questions/33889310/r-summary-equivalent-in-numpy
+- [IRIS DATASET ANALYSIS (PYTHON)](https://rajritvikblog.wordpress.com/2017/06/29/iris-dataset-analysis-python/)
 
-Python iris project:
+- [Statistics in Python](http://www.scipy-lectures.org/packages/statistics/index.html#statistics) 
 
-- https://rajritvikblog.wordpress.com/2017/06/29/iris-dataset-analysis-python/
+- [Data Visualization using matplotlib and seaborn](https://aaaanchakure.medium.com/data-visualization-a6dccf643fbb) 
 
-Statistics in Python:
+- [Python - IRIS Data visualization and explanation](https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation) 
 
-- http://www.scipy-lectures.org/packages/statistics/index.html#statistics
+- [Seaborn Matplotlib Iris Data Visualization](https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1) 
 
-- https://aaaanchakure.medium.com/data-visualization-a6dccf643fbb
+### **13.4 Iris Data Visualization using Python**
 
-Python - IRIS Data visualization and explanation:
+- [Iris Data Visualization using Python](https://www.kaggle.com/aschakra/iris-data-visualization-using-python)  
 
-- https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+### **13.5 Machine Learning Tutorial**
 
-- https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
+- [A Complete Guide to K-Nearest-Neighbors with Applications in Python and R](https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/)  
 
-Iris Data Visualization using Python:
+- [Plot 2D views of the iris dataset](https://scipy-lectures.org/packages/scikit-learn/auto_examples/plot_iris_scatter.html)   
 
-- https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+- [Scikit Learn - Iris Dataset](https://www.youtube.com/watch?v=rNHKCKXZde8)  
 
+### **13.6 Iris Dataset Analysis (Classification) | Machine Learning | Python**
 
-Machine Learning Tutorial:
+- [Getting started in scikit-learn with the famous iris dataset](https://www.youtube.com/watch?v=hd1W4CyPX58)  
 
-- https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/
+### **13.7 Jupyter Notebook**
 
-- https://diwashrestha.com/2017/09/18/machine-learning-on-iris/
+- [Jupyter Notebook](https://jupyter.org/)  
 
-- https://scipy-lectures.org/packages/scikit-learn/auto_examples/plot_iris_scatter.html
-
-- https://www.youtube.com/watch?v=rNHKCKXZde8
-
-IRIS DATASET ANALYSIS PYTHON | GTHUB:
-
-- https://github.com/search?q=iris+dataset
-
-Iris Dataset Analysis (Classification) | Machine Learning | Python:
-
-- https://www.youtube.com/watch?v=hd1W4CyPX58
-
-- https://www.youtube.com/watch?v=pTjsr_0YWas&t=66s
-
-Jupyter Notebook
-
-- https://jupyter.org/
-
-- https://sqlbak.com/blog/wp-content/uploads/2020/12/Jupyter-Notebook-Markdown-Cheatsheet2.pdf
+- [Jupyter Notebook Markdown Cheatsheet](https://sqlbak.com/blog/wp-content/uploads/2020/12/Jupyter-Notebook-Markdown-Cheatsheet2.pdf)  
 
 
