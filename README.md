@@ -15,12 +15,12 @@
   * [4.2 Summarize the Petal Width](#42-summarize-the-petal-width)
   * [4.3 Summarize the Sepal Width](#43-summarize-the-sepal-width)
   * [4.4 Summarize the Sepal Length](#44-summarize-the-sepal-length)
-* [5. Specifications of each variable.](#5-specifications-of-each-variable.)
+* [5. Specifications of each variable.](#5-specifications-of-each-variable)
   * [5.1 Specifications for petal_length variable](#51-specifications-for-petal_length-variable)
   * [5.2 Specifications for petal_width variable](#52-specifications-for-petal_width-variable)
   * [5.3 Specifications for sepal_length variable](#53-specifications-for-sepal_length-variable)
   * [5.4 Specifications for sepal_width variable](#54-specifications-for-sepal_width-variable)
-* [6. Scatter Plot of Iris Dataset (Relationship between variables)](#6-scatter-plot-of-iris-dataset-relationship-between-variables))
+* [6. Scatter Plot of Iris Dataset (Relationship between variables)](#6-scatter-plot-of-iris-dataset-relationship-between-variables)
   * [6.1 Scatter Plot](#61-scatter-plot)
   * [6.2 Violin Plot It is used to visualize the distribution of data and its probability distribution](#62-violin-plot-it-is-used-to-visualize-the-distribution-of-data-and-its-probability-distribution)
 * [7. Correlation](#7-correlation)
@@ -41,7 +41,7 @@
 
 ## **1. Task**
 
-Detailed project description can be found on [GitHub](https://github.com/Denio13/pands-project2021/blob/main/Project%202021.pdf)
+Detailed project description can be found on [Project 2021](https://github.com/Denio13/pands-project2021/blob/main/Project%202021.pdf)
 
 ## **2. Iris dataset**
 
@@ -661,6 +661,8 @@ plt.show()
     
 ![Plot_2D](charts/Plot_2D.png)
     
+
+
 
 
 ## **13. References**

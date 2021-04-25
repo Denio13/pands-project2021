@@ -1,15 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # Analysis of Iris dataset
-# ***
-# *Denis Sarf*
-#                                                         
+# Analysis of Iris dataset
+
+##Author: Denis Sarf
+                                                       
 # The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis.
 # This famous iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
-# 
+
 # The dataset contains a set of 150 records under 5 attributes:
-# 
+
 # 1. sepal length in cm 
 # 2. sepal width in cm 
 # 3. petal length in cm 
@@ -19,7 +17,6 @@
 #       - Iris Setosa 
 #       - Iris Virginica
 
-# ![irises.png](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png)
 
 # ### Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.
 # 
@@ -33,7 +30,7 @@
 
 # In[259]:
 
-
+#importing the libaries
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -151,7 +148,7 @@ plt.hist(iris_data['petal_width'], label = 'iris(setosa, versicolor, virginica)'
 # adding legend
 plt.legend()
 # defining x-axis
-plt.xlabel('size in cm')
+plt.xlabel('size in cm ')
 # defining y-axis
 plt.ylabel('count')
 # adding title 
