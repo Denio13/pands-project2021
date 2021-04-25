@@ -1,6 +1,5 @@
 #  Programming and scripting project 2021 
 *pands-project2021*
-*Denis Sarf*
 ***
 # **Analysis of Iris dataset**
 
