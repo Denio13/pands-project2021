@@ -5,16 +5,16 @@
 # **Analysis of Iris dataset**
 
 ## Table of contents
-* [Task](#task)
-* [Iris dataset](#iris-dataset)
-  * [Iris dataset history](#iris-dataset-history)
-  * [Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#importing-the-libaries-for-this-project:-pandas,-numpy,-matplotlib,-seaborn.)
-* [3. Dataset](#3.-dataset)
-* [4. Presenting the Summary of Dataset Statistics](#4.-presenting-the-summary-of-dataset-statistics)
-  * [4.1 Summarize the Petal Length](#4.1-summarize-the-petal-length)
-  * [4.2 Summarize the Petal Width](#4.2-summarize-the-petal-width)
-  * [4.3 Summarize the Sepal Width](#4.3-summarize-the-sepal-width)
-  * [4.4 Summarize the Sepal Length](#4.4-summarize-the-sepal-length)
+* [1. Task](#1-task)
+* [2. Iris dataset](#2-iris-dataset)
+  * [2.1 Iris dataset history](#21-iris-dataset-history)
+  * [2.2 Importing the libaries for this project: Pandas, Numpy, Matplotlib, Seaborn.](#23-importing-the-libaries-for-this-project-pandas-numpy-matplotlib-seaborn)
+* [3. Dataset](#3-dataset)
+* [4. Presenting the Summary of Dataset Statistics](#4-presenting-the-summary-of-dataset-statistics)
+  * [4.1 Summarize the Petal Length](#41-summarize-the-petal-length)
+  * [4.2 Summarize the Petal Width](#42-summarize-the-petal-width)
+  * [4.3 Summarize the Sepal Width](#43-summarize-the-sepal-width)
+  * [4.4 Summarize the Sepal Length](#44-summarize-the-sepal-length)
 * [Plots](#plots)
     * [Histograms](#histograms)
         * [Histogram code](#histogram-code)
@@ -26,13 +26,13 @@
     * [GitHub editing](#github-editing)
     * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
 
-## **Task**
+## **1. Task**
 
 Detailed project description can be found on [GitHub](https://github.com/Denio13/pands-project2021/blob/main/Project%202021.pdf)
 
-## **Iris dataset**
+## **2. Iris dataset**
 
-### **Iris dataset history**
+### **2.1 Iris dataset history**
                                                         
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The Use of Multiple Measurements in Taxonomic Problems”](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x) as an example of linear discriminant analysis.
 This famous iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
